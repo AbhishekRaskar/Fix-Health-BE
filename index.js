@@ -6,7 +6,7 @@ const cors = require("cors");
 const { contactRouter } = require("./Route/contactRoute");
 const app = express()
 
-
+app.use(cors())
 app.use("/doctor", doctorRouter)
 app.use("/contact", contactRouter)
 
